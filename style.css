@@ -10,3 +10,60 @@
   font-family: 'Raleway';
   src: url('polices/Raleway.ttf') format('truetype');
 }
+
+body
+{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+/*Mise en forme du header*/
+/*Mise en forme du nav*/
+
+nav 
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+nav ul 
+{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav img
+{
+    padding-top: 1em;
+}
+
+nav ul li a
+{
+    list-style: none;
+    text-decoration: none;
+    padding: 0em 1em 0em 1em ;
+}
+
+nav ul li
+{
+border-top: solid #0065FC;
+padding-top: 2em;
+}
+
+nav ul li:nth-child(2)
+{
+    border-top: solid transparent;
+}
+
+nav ul li:nth-child(3)
+{
+    border-top: solid transparent;
+    font-weight: bold;
+}
+
+nav ul li:hover
+{
+    border-top: solid #0065FC;
+}
