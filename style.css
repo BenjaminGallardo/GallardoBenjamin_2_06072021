@@ -157,3 +157,30 @@ input[type="submit"]
   height: 1.2em;
   width: 1.2em;
 }
+
+/*Mise en forme Aside*/
+
+aside 
+{
+  display: flex;
+  align-items: center;
+  margin-top: 0.5em;
+}
+
+aside i 
+{
+color: #0065FC;
+font-size: 10px;
+border: solid 2px #F2F2F2;
+padding: 0.4em;
+border-radius: 50%;
+width: 1em;
+height: 1em;
+text-align: center;
+}
+
+aside p 
+{
+  padding-left: 0.5em;
+  font-size: 12px;
+}
