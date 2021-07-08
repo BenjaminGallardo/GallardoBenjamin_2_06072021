@@ -71,44 +71,53 @@ nav ul li:hover
 /*Mise en forme de la navbar des filtres*/
 /*Mise en forme de la barre de recherche*/
 
-#navbar p 
+#search p 
 {
     padding-bottom: 0.5em;
 }
 
-#navbar p:first-child 
+#search p:first-child 
 {
   font-weight: bold;
+  font-size: 2em;
+}
+
+form
+{
+    max-width: 100%;
+    overflow: auto;
 }
 
 label[for="search"]
 {
   background-color: #F2F2F2;
-  padding: 0.7em;
-  font-size: 12px;
-  border-radius: 5px 0px 0px 5px;
+  padding: 0.7em 0.9em 0.71em 0.9em;
+  font-size: 0.5em;
+  border-radius: 0.5em 0em 0em 0.5em;
 }
 
 input[type="text"]
 {
   position: relative;
-  right: 0.3em;
+  right: 0.7em;
   border: 1px solid #F2F2F2;
-  padding: 0.5em;
+  padding: 0.84em 0em 0.76em 1em;
+  font-size: 14px;
   font-weight: bold;
 }
 
 input[type="submit"]
 {
   position: relative;
-  right: 0.7em;
+  right: 1.36em;
   color: white;
   font-weight: bold;
   background-color: #0065FC;
   border: transparent;
   border-radius: 0px 5px 5px 0px;
-  padding: 0.6em;
+  padding: 0.92em 0.5em 0.83em 0.5em;
   cursor: pointer;
+  font-size: 14px;
 }
 
 /*Mise en place des filtres*/
@@ -127,7 +136,7 @@ input[type="submit"]
 
 #filters h2 
 {
-    font-size: 15px ;
+    font-size: 18px ;
     font-weight: bold;
 }
 
@@ -138,10 +147,9 @@ input[type="submit"]
   color: black;
   border: #F2F2F2 2px solid;
   border-left: transparent;
-  padding: 0.3em;
-  padding-left: 2em;
-  padding-right: 1.5em;
+  padding: 0.38em 1.5em 0.34em 2em;
   border-radius: 0px 20px 20px 0px;
+  font-size: 0.9em;
 }
 
 #filters i 
@@ -151,11 +159,12 @@ input[type="submit"]
   color: #0065FC;
   padding: 0.35em; 
   position: relative;
-  left:1.2em;
+  left:1em;
   text-align: center;
   border-radius: 50%;
-  height: 1.2em;
-  width: 1.2em;
+  height: auto;
+  width: auto;
+  font-size: 1em;
 }
 
 /*Mise en forme Aside*/
@@ -195,11 +204,11 @@ aside p
 
 /*Mise en forme de accommodations*/
 
-section img
+#accommodationsmarseille img
 {
-  width: 200px;
-  height: 100px;
-  border-radius: 1em;
+    width: 200px;
+    height: 150px;
+    border-radius: 1em;
 }
 
 #accommodations
@@ -208,6 +217,12 @@ section img
     border-radius: 1em;
     margin-top: 1em;
     padding: 1em;
+}
+
+#accommodations h2
+{
+    font-size: 20px;
+    font-weight: bold;
 }
 
 #accommodations ul
@@ -219,14 +234,13 @@ section img
 
 #accommodations ul li
 {
-    margin: auto;
     margin-bottom: 1em;
     margin-top: 1em;
     padding: 1em;
     border: white solid 2px;
     border-radius: 1em;
     background-color: white;
-    max-width: 200px;
+    margin: auto;
 }
 
 #accommodations ul li a
@@ -250,6 +264,13 @@ section img
 {
     font-size: 13px;
     color: #0065FC;
+}
+
+#accommodations a:last-child
+{
+text-decoration: none;
+color: black;
+font-weight: bold;
 }
 
 /*Mise en forme de mostpopular*/
@@ -278,7 +299,8 @@ section img
     border: white solid 2px;
     border-radius: 1em;
     background-color: white;
-    max-width: 200px;
+    max-width: 100%;
+    height: auto;
 }
 
 #mostpopular ul li a
@@ -304,4 +326,74 @@ section img
     font-size: 13px;
     color: #0065FC;
 }
+
+/*Mise en forme activity*/
+
+#activity
+{
+    margin-top: 1em;
+    padding: 1em;
+}
+
+#activity img 
+{
+    box-sizing: content-box;
+    width: 100%;
+}
+
+#activity ul
+{
+    column-count: 4;
+    list-style-type: none ;
+}
+
+#activity ul li 
+{
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding: 1em;
+    border: white solid 2px;
+    border-radius: 1em;
+    background-color: white;
+    max-width: 200px;
+}
+
+#activity ul li a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/*Mise en forme du footer*/
+
+footer 
+{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+}
+
+.informations
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2em 15em 2em 2em;
+}
+
+.informations h2
+{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.informations a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    padding-top: 1em;
+}
+
 
