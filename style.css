@@ -67,3 +67,93 @@ nav ul li:hover
 {
     border-top: solid #0065FC;
 }
+
+/*Mise en forme de la navbar des filtres*/
+/*Mise en forme de la barre de recherche*/
+
+#navbar p 
+{
+    padding-bottom: 0.5em;
+}
+
+#navbar p:first-child 
+{
+  font-weight: bold;
+}
+
+label[for="search"]
+{
+  background-color: #F2F2F2;
+  padding: 0.7em;
+  font-size: 12px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+input[type="text"]
+{
+  position: relative;
+  right: 0.3em;
+  border: 1px solid #F2F2F2;
+  padding: 0.5em;
+  font-weight: bold;
+}
+
+input[type="submit"]
+{
+  position: relative;
+  right: 0.7em;
+  color: white;
+  font-weight: bold;
+  background-color: #0065FC;
+  border: transparent;
+  border-radius: 0px 5px 5px 0px;
+  padding: 0.6em;
+  cursor: pointer;
+}
+
+/*Mise en place des filtres*/
+
+#filters 
+{
+    margin-top: 1em;
+}
+
+#filters ul 
+{
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+#filters h2 
+{
+    font-size: 15px ;
+    font-weight: bold;
+}
+
+#filters a 
+{
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  border: #F2F2F2 2px solid;
+  border-left: transparent;
+  padding: 0.3em;
+  padding-left: 2em;
+  padding-right: 1.5em;
+  border-radius: 0px 20px 20px 0px;
+}
+
+#filters i 
+{
+  border: #F2F2F2 2px solid;
+  background-color: #F2F2F2;
+  color: #0065FC;
+  padding: 0.35em; 
+  position: relative;
+  left:1.2em;
+  text-align: center;
+  border-radius: 50%;
+  height: 1.2em;
+  width: 1.2em;
+}
