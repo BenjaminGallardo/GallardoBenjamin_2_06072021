@@ -71,12 +71,12 @@ nav ul li:hover
 /*Mise en forme de la navbar des filtres*/
 /*Mise en forme de la barre de recherche*/
 
-#search p 
+#searchs p 
 {
     padding-bottom: 0.5em;
 }
 
-#search p:first-child 
+#searchs p:first-child 
 {
   font-weight: bold;
   font-size: 2em;
@@ -167,6 +167,10 @@ input[type="submit"]
   font-size: 1em;
 }
 
+#filters a:hover
+{
+    background-color: #DEEBFF;
+}
 /*Mise en forme Aside*/
 
 aside 
@@ -199,7 +203,6 @@ aside p
 #accommodationsmarseille
 {
     display: flex;
-    margin: auto;
 }
 
 /*Mise en forme de accommodations*/
@@ -215,7 +218,7 @@ aside p
 {
     background-color: #F2F2F2;
     border-radius: 1em;
-    margin-top: 1em;
+    margin: 1em 1em 0em 0em;
     padding: 1em;
 }
 
@@ -234,13 +237,11 @@ aside p
 
 #accommodations ul li
 {
-    margin-bottom: 1em;
-    margin-top: 1em;
+    margin: 1em 1em 1em 0em;
     padding: 1em;
     border: white solid 2px;
     border-radius: 1em;
     background-color: white;
-    margin: auto;
 }
 
 #accommodations ul li a
@@ -268,12 +269,20 @@ aside p
 
 #accommodations a:last-child
 {
-text-decoration: none;
-color: black;
-font-weight: bold;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
 /*Mise en forme de mostpopular*/
+
+.title
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
 
 #mostpopular
 {
@@ -292,28 +301,32 @@ font-weight: bold;
 
 #mostpopular ul li
 {
-    margin: auto;
-    margin-bottom: 1em;
-    margin-top: 1em;
-    padding: 1em;
-    border: white solid 2px;
+    margin: 0.5em 0em 0em 0em;
+    border: white solid 0.3em;
     border-radius: 1em;
     background-color: white;
-    max-width: 100%;
-    height: auto;
+    /*max-width: 100%;*/
 }
 
 #mostpopular ul li a
 {
+    display: flex;
     text-decoration: none;
     color: black;
+    
+}
+
+.carddescription
+{
+    display: flex;
+    flex-direction: column;
 }
 
 #mostpopular ul li h2
 {
     font-size: 15px;
     font-weight: bold;
-    text-overflow: clip;
+    /*text-overflow: clip;*/
 }
 
 #mostpopular ul li p
@@ -325,6 +338,11 @@ font-weight: bold;
 {
     font-size: 13px;
     color: #0065FC;
+}
+
+#mostpopular ul li img
+{
+    padding-right: 1em;
 }
 
 /*Mise en forme activity*/
