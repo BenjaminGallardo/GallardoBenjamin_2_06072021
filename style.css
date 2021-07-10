@@ -11,13 +11,13 @@
   src: url('polices/Raleway.ttf') format('truetype');
 }
 
-body
-{
-    margin-left: 1em;
-    margin-right: 1em;
-}
 /*Mise en forme du header*/
 /*Mise en forme du nav*/
+
+header
+{
+    margin: 0em 1em 0em 1em;
+}
 
 nav 
 {
@@ -36,7 +36,7 @@ nav ul
 
 nav img
 {
-    padding-top: 1em;
+    padding-top: 1em; 
 }
 
 nav ul li a
@@ -50,6 +50,11 @@ nav ul li
 {
 border-top: solid #0065FC;
 padding-top: 2em;
+}
+
+#blacknav
+{
+    color: black;
 }
 
 nav ul li:nth-child(2)
@@ -71,15 +76,16 @@ nav ul li:hover
 /*Mise en forme de la navbar des filtres*/
 /*Mise en forme de la barre de recherche*/
 
-#searchs p 
+.searchs p 
 {
     padding-bottom: 0.5em;
 }
 
-#searchs p:first-child 
+.searchs h2
 {
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.3em;
+  padding-bottom: 0.5em;
 }
 
 form
@@ -92,7 +98,7 @@ label[for="search"]
 {
   background-color: #F2F2F2;
   padding: 0.7em 0.9em 0.71em 0.9em;
-  font-size: 0.5em;
+  font-size: 1em;
   border-radius: 0.5em 0em 0em 0.5em;
 }
 
@@ -122,42 +128,42 @@ input[type="submit"]
 
 /*Mise en place des filtres*/
 
-#filters 
+.filters 
 {
     margin-top: 1em;
 }
 
-#filters ul 
+.filters ul 
 {
   display: flex;
   align-items: center;
   list-style-type: none;
 }
 
-#filters h2 
+.filters h2 
 {
-    font-size: 18px ;
+    font-size: 1em;
     font-weight: bold;
 }
 
-#filters a 
+.filters a 
 {
-  text-decoration: none;
-  font-weight: bold;
-  color: black;
-  border: #F2F2F2 2px solid;
-  border-left: transparent;
-  padding: 0.38em 1.5em 0.34em 2em;
-  border-radius: 0px 20px 20px 0px;
-  font-size: 0.9em;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    border: #F2F2F2 2px solid;
+    border-left: transparent;
+    padding: 0.53em 1.5em 0.51em 2em;
+    border-radius: 0px 20px 20px 0px;
+    font-size: 0.9em;
 }
 
-#filters i 
+.filters i 
 {
   border: #F2F2F2 2px solid;
   background-color: #F2F2F2;
   color: #0065FC;
-  padding: 0.35em; 
+  padding: 0.5em; 
   position: relative;
   left:1em;
   text-align: center;
@@ -165,19 +171,21 @@ input[type="submit"]
   height: auto;
   width: auto;
   font-size: 1em;
+  cursor: pointer;
 }
 
-#filters a:hover
+.filterseffect:hover
 {
-    background-color: #DEEBFF;
+    transform:scale(1.10);
 }
+
 /*Mise en forme Aside*/
 
 aside 
 {
   display: flex;
   align-items: center;
-  margin-top: 0.5em;
+  margin: 0.5em 1em 0em 1em;
 }
 
 aside i 
@@ -200,78 +208,93 @@ aside p
 
 /*Mise en forme accommodationsmarseille*/
 
-#accommodationsmarseille
+.hostingsmarseille
 {
     display: flex;
+    margin: 0em 1em 0em 1em;
 }
 
 /*Mise en forme de accommodations*/
 
-#accommodationsmarseille img
+.hostings img
 {
-    width: 200px;
+    width: 250px;
     height: 150px;
     border-radius: 1em;
 }
 
-#accommodations
+.hostings
 {
     background-color: #F2F2F2;
     border-radius: 1em;
     margin: 1em 1em 0em 0em;
     padding: 1em;
+    flex: 1;
 }
 
-#accommodations h2
+.hostings h2
 {
     font-size: 20px;
     font-weight: bold;
 }
 
-#accommodations ul
+.hostings ul
 {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template: repeat(1, 3fr) / repeat(3,1fr);
+    gap: 1em;
     list-style-type: none;
+    width: 100%;
 }
 
-#accommodations ul li
+
+.hostings ul li
 {
     margin: 1em 1em 1em 0em;
-    padding: 1em;
-    border: white solid 2px;
+    border: white solid 0.3em;
     border-radius: 1em;
     background-color: white;
 }
 
-#accommodations ul li a
+.hostings ul li a
 {
     text-decoration: none;
     color: black;
 }
 
-#accommodations ul li h2
+.hostings ul li h2
 {
     font-size: 15px;
     font-weight: bold;
 }
 
-#accommodations ul li p
+.hostings ul li p
 {
     font-size: 12px;
 }
 
-#accommodations ul li i
+.hostings ul li i
 {
     font-size: 13px;
     color: #0065FC;
 }
 
-#accommodations a:last-child
+.hostings a:last-child
 {
     text-decoration: none;
     color: black;
     font-weight: bold;
+}
+
+.hostings ul li:hover
+{
+    transform:scale(1.10);
+}
+
+.cardhostingsdescription
+{
+    padding: 0.5em 0em 0em 0.7em;
+    line-height: 1.3em;
 }
 
 /*Mise en forme de mostpopular*/
@@ -284,7 +307,15 @@ aside p
     font-size: 15px;
 }
 
-#mostpopular
+.mostpopular img
+{
+    width: 200px;
+    height: 150px;
+    border-radius: 1em;
+    max-width: 100%;
+}
+
+.mostpopular
 {
     margin-top: 1em;
     padding: 1em;
@@ -292,23 +323,22 @@ aside p
     border-radius: 1em;
 }
 
-#mostpopular ul
+.mostpopular ul
 {
     display: flex;
     flex-direction: column;
     list-style-type: none ;
 }
 
-#mostpopular ul li
+.mostpopular ul li
 {
-    margin: 0.5em 0em 0em 0em;
+    margin: 2em 0em 0em 0em;
     border: white solid 0.3em;
     border-radius: 1em;
     background-color: white;
-    /*max-width: 100%;*/
 }
 
-#mostpopular ul li a
+.mostpopular ul li a
 {
     display: flex;
     text-decoration: none;
@@ -316,67 +346,65 @@ aside p
     
 }
 
-.carddescription
+.cardpopulardescription
 {
     display: flex;
     flex-direction: column;
 }
 
-#mostpopular ul li h2
+.mostpopular ul li h2
 {
     font-size: 15px;
     font-weight: bold;
-    /*text-overflow: clip;*/
 }
 
-#mostpopular ul li p
+.mostpopular ul li p
 {
     font-size: 12px;
 }
 
-#mostpopular ul li i
+.mostpopular ul li i
 {
     font-size: 13px;
     color: #0065FC;
 }
 
-#mostpopular ul li img
+.mostpopular ul li img
 {
     padding-right: 1em;
 }
 
+.mostpopular ul li:hover
+{
+    transform:scale(1.10);
+}
+
 /*Mise en forme activity*/
 
-#activity
+.activity
 {
-    margin-top: 1em;
-    padding: 1em;
+    margin: 1em 1em 0em 1em;
 }
 
-#activity img 
+.activity h2
 {
-    box-sizing: content-box;
-    width: 100%;
+margin: 1em 0em 0.5em 0em;
 }
 
-#activity ul
+.activity img
+{
+    height: 200px;
+    width: 300px;
+    border-radius: 1em 1em 0em 0em;
+}
+
+.activity ul 
 {
     column-count: 4;
-    list-style-type: none ;
+    list-style-type: none;
 }
 
-#activity ul li 
-{
-    margin-bottom: 1em;
-    margin-top: 1em;
-    padding: 1em;
-    border: white solid 2px;
-    border-radius: 1em;
-    background-color: white;
-    max-width: 200px;
-}
-
-#activity ul li a
+.activity ul li a
 {
     text-decoration: none;
     color: black;
@@ -389,7 +417,8 @@ footer
 {
     background-color: #F2F2F2;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    margin: 1em 0em 0em 0em;
 }
 
 .informations
@@ -397,7 +426,8 @@ footer
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 2em 15em 2em 2em;
+    padding: 2em 2em 2em 2em;
+    width: 60%;
 }
 
 .informations h2
