@@ -56,6 +56,7 @@ padding-top: 2em;
 #activitycolor
 {
     color: black;
+    padding: 0em 1em 0em 1em ;
 }
 #activitycolor:hover
 {
@@ -158,7 +159,7 @@ input[type="submit"]
     color: black;
     border: #F2F2F2 2px solid;
     border-left: transparent;
-    padding: 0.85em 1.5em 0.85em 2em;
+    padding: 0.9em 1.5em 0.85em 2em;
     border-radius: 0px 20px 20px 0px;
     font-size: 0.9em;
 }
@@ -168,7 +169,7 @@ input[type="submit"]
   background-color: #DEEBFF;
   color: #0065FC;
   position: relative;
-  left: 1.2em;
+  left: 1.3em;
   padding: 0.9em; 
   text-align: center;
   border-radius: 100%;
@@ -180,7 +181,8 @@ input[type="submit"]
 
 #economic
 {
-    padding: 1em 0.9em 1em 0.9em; 
+    padding: 1.2em 1em 1.1em 1em; 
+    font-size: 0.9em;
 }
 
 #family
@@ -333,6 +335,7 @@ em
     height: 150px;
     border-radius: 1em;
     max-width: 100%;
+    overflow: hidden;
 }
 
 .mostpopular
@@ -370,12 +373,15 @@ em
 {
     display: flex;
     flex-direction: column;
+    padding-top: 0.5em;
+    flex-wrap: nowrap;
 }
 
 .mostpopular ul li h2
 {
     font-size: 15px;
     font-weight: bold;
+    padding-bottom: 0.3em;
 }
 
 .mostpopular ul li p
@@ -389,7 +395,17 @@ em
     color: #0065FC;
 }
 
-#emptystars
+.starempty i:last-child
+{
+    color: #F2F2F2;
+}
+
+.starsempty i:nth-child(4)
+{
+    color: #F2F2F2;
+}
+
+.starsempty i:nth-child(5)
 {
     color: #F2F2F2;
 }
