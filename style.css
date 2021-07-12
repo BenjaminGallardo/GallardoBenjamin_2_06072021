@@ -32,6 +32,7 @@ nav ul
     display: flex;
     list-style-type: none;
     align-items: center;
+
 }
 
 nav img
@@ -52,9 +53,13 @@ border-top: solid #0065FC;
 padding-top: 2em;
 }
 
-#blacknav
+#activitycolor
 {
     color: black;
+}
+#activitycolor:hover
+{
+    color: #0065FC;
 }
 
 nav ul li:nth-child(2)
@@ -68,7 +73,7 @@ nav ul li:nth-child(3)
     font-weight: bold;
 }
 
-nav ul li:hover
+nav ul li:nth-child(2):hover
 {
     border-top: solid #0065FC;
 }
@@ -153,7 +158,7 @@ input[type="submit"]
     color: black;
     border: #F2F2F2 2px solid;
     border-left: transparent;
-    padding: 0.55em 1.5em 0.49em 2em;
+    padding: 0.85em 1.5em 0.85em 2em;
     border-radius: 0px 20px 20px 0px;
     font-size: 0.9em;
 }
@@ -162,15 +167,25 @@ input[type="submit"]
 {
   background-color: #DEEBFF;
   color: #0065FC;
-  padding: 0.6em; 
   position: relative;
   left: 1.2em;
+  padding: 0.9em; 
   text-align: center;
-  border-radius: 50%;
+  border-radius: 100%;
   height: auto;
   width: auto;
   font-size: 1em;
   cursor: pointer;
+}
+
+#economic
+{
+    padding: 1em 0.9em 1em 0.9em; 
+}
+
+#family
+{
+    padding: 0.9em 1em 0.9em 1em; 
 }
 
 .filterseffect:hover
@@ -454,4 +469,22 @@ footer
     padding-top: 1em;
 }
 
+@media screen and (max-width: 414px) 
+{
+}
 
+@media screen and (max-width: 768px)
+{ 
+}
+
+@media screen and (max-width: 1024px) 
+{ 
+}
+
+@media screen and (max-width: 1920px) 
+{   
+}
+
+@media screen and (max-width: 2560px) 
+{
+}
