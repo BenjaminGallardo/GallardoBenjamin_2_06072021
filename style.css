@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Raleway';
+    list-style-type: none;
+    text-decoration: none;
 }
 
 @font-face 
@@ -16,67 +18,44 @@
 
 header
 {
-    margin: 0em 1em 0em 1em;
+    margin: 2em 2em 0em 2em;
+}
+
+.anchors
+{
+    display: flex;
+    justify-content: space-between;
 }
 
 nav 
 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 1em;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5em 0em 3em 0em;
 }
 
 nav ul 
 {
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-
-}
-
-nav img
-{
-    padding-top: 1em; 
+    display: flex;   
 }
 
 nav ul li a
 {
-    list-style: none;
-    text-decoration: none;
-    padding: 0em 1em 0em 1em ;
-}
-
-nav ul li
-{
-border-top: solid #0065FC;
-padding-top: 2em;
-}
-
-#activitycolor
-{
     color: black;
-    padding: 0em 1em 0em 1em ;
-}
-#activitycolor:hover
-{
-    color: #0065FC;
+    border-top: solid transparent 2px;
+    padding: 2em 1em 0em 1em;
 }
 
-nav ul li:nth-child(2)
+.inscription
 {
-    border-top: solid transparent;
-}
-
-nav ul li:nth-child(3)
-{
-    border-top: solid transparent;
     font-weight: bold;
+    padding-left: 1em;
 }
 
-nav ul li:nth-child(2):hover
+nav ul li a:hover
 {
-    border-top: solid #0065FC;
+   border-top: #0065FC solid 2px;
+   color: #0065FC;
 }
 
 /*Mise en forme de la navbar des filtres*/
@@ -105,7 +84,7 @@ label[for="search"]
   background-color: #F2F2F2;
   padding: 0.7em 0.9em 0.71em 0.9em;
   font-size: 1em;
-  border-radius: 0.5em 0em 0em 0.5em;
+  border-radius: 0.75em 0em 0em 0.75em;
 }
 
 input[type="text"]
@@ -126,7 +105,7 @@ input[type="submit"]
   font-weight: bold;
   background-color: #0065FC;
   border: transparent;
-  border-radius: 0px 5px 5px 0px;
+  border-radius: 0em 0.75em 0.75em 0em;
   padding: 0.92em 0.5em 0.83em 0.5em;
   cursor: pointer;
   font-size: 14px;
@@ -201,7 +180,7 @@ aside
 {
   display: flex;
   align-items: center;
-  margin: 0.5em 1em 0em 1em;
+  margin: 1em 1em 0em 2em;
 }
 
 aside i 
@@ -222,22 +201,27 @@ aside p
   font-size: 12px;
 }
 
-/*Mise en forme accommodationsmarseille*/
+/*Mise en forme hostingsmarseille*/
+
+#none
+{
+    display: none;
+}
 
 .hostingsmarseille
 {
     display: flex;
-    margin: 0em 1em 0em 1em;
 }
 
-/*Mise en forme de accommodations*/
 
-.hostings img
+/*Mise en forme de la section hostingsmarseille*/
+
+.hostingsmarseille
 {
-    width: 250px;
-    height: 150px;
-    border-radius: 1em;
+    margin: 1em 2em 1em 2em;
 }
+
+/*Mise en forme de l'article hostings*/
 
 .hostings
 {
@@ -245,7 +229,7 @@ aside p
     border-radius: 1em;
     margin: 1em 1em 0em 0em;
     padding: 1em;
-    flex: 1;
+    width: 100%;
 }
 
 .hostings h2
@@ -254,40 +238,56 @@ aside p
     font-weight: bold;
 }
 
-.hostings ul
+/*Mise en forme de la div hostingscards*/
+
+.hostingscards
 {
     display: grid;
     grid-template: repeat(1, 3fr) / repeat(3,1fr);
-    gap: 1em;
-    list-style-type: none;
-    width: 100%;
+    gap: 1em;  
 }
 
-
-.hostings ul li
+.hostingscards img
 {
-    margin: 1em 1em 1em 0em;
-    border: white solid 0.3em;
-    border-radius: 1em;
-    background-color: white;
+    height: 8em;
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 1em 1em 0em 0em ;
 }
 
-.hostings ul li a
+.hostingscards figure
+{
+        margin: 1em 1em 2em 0em;
+        border: white solid 0.3em;
+        border-radius: 1em;
+        background-color: white;
+        box-shadow: 0 0 5px #000029;
+}
+
+a figure 
 {
     text-decoration: none;
     color: black;
 }
 
-.hostings ul li h2
+.hostingscards figcaption h2
 {
     font-size: 15px;
     font-weight: bold;
 }
 
-.hostings ul li p
+.hostingscards figcaption p
 {
     font-size: 12px;
     font-weight: normal;
+}
+
+.hostingscards figcaption
+{
+    padding: 0.5em 0em 0em 0.7em;
+    line-height: 1.3em;
 }
 
 em
@@ -295,104 +295,15 @@ em
     font-weight: bold;
 }
 
-.hostings ul li i
+.hostingscards figcaption i
 {
     font-size: 13px;
     color: #0065FC;
 }
 
-.hostings a:last-child
-{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-.hostings ul li:hover
+.hostingscards a:hover
 {
     transform:scale(1.10);
-}
-
-.cardhostingsdescription
-{
-    padding: 0.5em 0em 0em 0.7em;
-    line-height: 1.3em;
-}
-
-/*Mise en forme de mostpopular*/
-
-.title
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 15px;
-}
-
-.mostpopular img
-{
-    width: 200px;
-    height: 150px;
-    border-radius: 1em;
-    max-width: 100%;
-    overflow: hidden;
-}
-
-.mostpopular
-{
-    margin-top: 1em;
-    padding: 1em;
-    background-color: #F2F2F2;
-    border-radius: 1em;
-}
-
-.mostpopular ul
-{
-    display: flex;
-    flex-direction: column;
-    list-style-type: none ;
-}
-
-.mostpopular ul li
-{
-    margin: 2em 0em 0em 0em;
-    border: white solid 0.3em;
-    border-radius: 1em;
-    background-color: white;
-}
-
-.mostpopular ul li a
-{
-    display: flex;
-    text-decoration: none;
-    color: black;
-    
-}
-
-.cardpopulardescription
-{
-    display: flex;
-    flex-direction: column;
-    padding-top: 0.5em;
-    flex-wrap: nowrap;
-}
-
-.mostpopular ul li h2
-{
-    font-size: 15px;
-    font-weight: bold;
-    padding-bottom: 0.3em;
-}
-
-.mostpopular ul li p
-{
-    font-size: 12px;
-}
-
-.mostpopular ul li i
-{
-    font-size: 13px;
-    color: #0065FC;
 }
 
 .starempty i:last-child
@@ -410,26 +321,98 @@ em
     color: #F2F2F2;
 }
 
-.mostpopular ul li img
+.hostings a:last-child
 {
-    padding-right: 1em;
+    color: black;
+    font-weight: bold;
 }
 
-.mostpopular ul li:hover
+/*Mise en forme de mostpopular*/
+
+.mostpopular
+{
+    background-color: #F2F2F2;
+    border-radius: 1em;
+    margin-top: 1em;
+    padding-left: 1em;
+    width: 45%;
+}
+
+.titlepopular
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    padding: 1em 1em 0em 0em;
+}
+
+/*Mise en forme des cartes populaires*/
+
+.mostpopularcards
+{
+    display: flex;
+    flex-direction: column;
+}
+.mostpopular img 
+{
+    height: 9em;
+    object-fit: cover;
+    width: 8em;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 1em 0em 0em 1em ;
+}
+
+.mostpopularcards figure 
+{
+    display: flex; 
+    margin: 1em 1em 2em 0em;
+    border: white solid 0.3em;
+    border-radius: 1em;
+    background-color: white;
+    box-shadow: 0 0 5px #000029;
+}
+
+.mostpopular figcaption
+{
+    padding: 0.2em 1em 0em 1em;
+}
+
+.mostpopular figcaption h2
+{
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 0.3em;
+}
+
+.mostpopular figcaption p
+{
+    font-size: 12px;
+}
+
+.mostpopular figcaption i
+{
+    font-size: 13px;
+    color: #0065FC;
+}
+
+.mostpopularcards a:hover
 {
     transform:scale(1.10);
 }
 
-/*Mise en forme activity*/
+/*Mise en forme de la section activité*/
 
 .activity
 {
     margin: 1em 1em 0em 1em;
+    column-count: 4;
 }
 
 .activity h2
 {
-margin: 1em 0em 0.5em 0em;
+    margin: 1em 0em 0.5em 0em;
 }
 
 .activity img
@@ -439,68 +422,57 @@ margin: 1em 0em 0.5em 0em;
     border-radius: 1em 1em 0em 0em;
 }
 
-.activity ul 
+.activity figure
 {
-    column-count: 4;
-    list-style-type: none;
-}
-
-.activity ul li a
-{
-    text-decoration: none;
     color: black;
     font-weight: bold;
 }
 
 /*Mise en forme du footer*/
 
-footer 
+footer
 {
     background-color: #F2F2F2;
     display: flex;
     justify-content: space-between;
-    margin: 1em 0em 0em 0em;
 }
 
-.informations
+footer ul
 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 2em 2em 2em 2em;
     width: 60%;
+    padding: 2em;
 }
 
-.informations h2
+footer ul li h2
 {
     font-weight: bold;
     font-size: 15px;
 }
 
-.informations a
+footer ul li a
 {
-    text-decoration: none;
     color: black;
     font-size: 12px;
     padding-top: 1em;
 }
 
-@media screen and (max-width: 414px) 
+@media screen (max-width: 414px) 
 {
 }
 
-@media screen and (max-width: 768px)
+@media screen (min-width:415px) and (max-width: 768px)
+{  
+}
+
+@media screen (max-width: 1024px) 
 { 
 }
 
-@media screen and (max-width: 1024px) 
-{ 
-}
-
-@media screen and (max-width: 1920px) 
+@media screen (max-width: 1920px) 
 {   
 }
 
-@media screen and (max-width: 2560px) 
+@media screen (max-width: 2560px) 
 {
 }
+
