@@ -538,7 +538,8 @@ nav ul li a
 
 #activityanchor a
 {
-  padding: 0em 3.5em 1em 2em;
+  padding: 0em 2.5em 0.5em 1em;
+  
 }
 
 #hostingsanchor a
@@ -641,6 +642,8 @@ aside i
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    margin-left: 1.2em;
+    margin-right: 1.2em;
 }
 
 .hostings
@@ -696,7 +699,12 @@ aside i
 
 .activity
 {
-    margin: 2em 1em 0em 1em;
+    margin: 1em 0em 0em 0em;
+}
+
+.activity h2:nth-child(1)
+{
+    padding: 1em 0em 1em 1em;
 }
 
 .activitycards
@@ -705,10 +713,12 @@ aside i
     flex-direction: column;
 }
 
-.largepictures img
+.activitycards img
 {
-    height: 9em;
+    height: 7em;
+    width: 100%;
 }
+
 
 /*Mise en forme du footer*/
 
@@ -716,7 +726,6 @@ footer
 {
     display: flex;
     flex-direction: column;
-}
 }
 
 @media screen and (min-width: 769px) and (max-width: 1224px) 
