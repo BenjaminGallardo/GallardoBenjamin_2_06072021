@@ -538,7 +538,7 @@ nav ul li a
 
 #activityanchor a
 {
-  padding: 0em 2.5em 0.5em 1em;
+  padding: 0em 2.5em 1em 1em;
   
 }
 
@@ -681,13 +681,14 @@ aside i
 
 .mostpopular
 {
-    width: 115%;
+    width: 100%;
     border-radius: 0em;
 }
 
 .mostpopularcards
 {
     margin: 1em 0em 1em 0em;
+    max-width: 95%;
 }
 
 .mostpopularcards figure
@@ -819,7 +820,7 @@ label[for="search"]
 
 .mostpopular
 {
-    width: 100%;
+    margin: 0em 2em 0em 2em;
 }
 
 .mostpopularcards
