@@ -502,7 +502,7 @@ footer ul li a
 
 /*Mise en place des différents environnements*/
 
-@media screen and (min-width: 0px) and (max-width: 414px)
+@media screen and (min-width: 0px) and (max-width: 768px)
 {
 
 /*Mise en forme du nav header*/
@@ -583,6 +583,7 @@ span
     padding: 0.75em;
     position: relative;
     right: 2em;
+    cursor: pointer;
 }
 
 input[type="text"]
@@ -730,7 +731,7 @@ footer
 {  
 }*/
 
-@media screen and (min-width: 768px) and (max-width: 1024px) 
+@media screen and (min-width: 769px) and (max-width: 1440px) 
 { 
 
 /*Mise en forme de la barre de recherche*/
@@ -755,6 +756,7 @@ span
     padding: 0.75em;
     position: relative;
     right: 2em;
+    cursor: pointer;
 }
 
 input[type="text"]
@@ -836,11 +838,11 @@ label[for="search"]
 }
 }
 
-@media screen (min-width: 1025px) and (max-width: 1920px) 
-{   
-}
-
-@media screen and (min-width: 1921px) and (max-width: 2560px) 
+@media screen and (min-width: 1441px) and (max-width: 2560px) 
 {
+    body
+    {
+        margin: 0em 15em 0em 15em;
+    }
 }
 
