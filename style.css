@@ -516,42 +516,29 @@ margin: 1em 1em 0em 1em;
 {
     display: flex;
     flex-direction: column;
+    margin-bottom: 1em;
 }
 
 .inscription
 {
     position: absolute;
-    top: 1.8em;
+    top: 2em;
     right: 3em;
 }
 
 nav 
 {
-    padding-bottom: 1em;
-}
-
-nav ul
-{   
-    width: 100%;
+    padding:1em 0em 1em 0em;
 }
 
 nav ul li a
 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0em 0em 1em 0em; 
     border-bottom: #F2F2F2 solid 3px;  
-
-}
-
-nav ul li a:first-child
-{
-    padding: 0em 0em 1em 2em;
 }
 
 nav ul li a:last-child
 {
-    padding: 0em 0em 1em 1em;
+  padding: 0em 4em 1em 2em;
 }
 
 nav ul li a:hover
