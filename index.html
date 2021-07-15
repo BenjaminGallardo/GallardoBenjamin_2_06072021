@@ -3,7 +3,7 @@
 
         <head>
             <meta charset="UTF-8"/>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" type="text/css" href="style.css"/>
             <script src="https://kit.fontawesome.com/0ceb91f2c8.js" crossorigin="anonymous"></script>
             <title>Reservia</title>
@@ -19,7 +19,7 @@
                         <nav>
                             <ul>
                                 <li><a href="#hostingsmarseilleanchor">Hébergements</a></li>
-                                <li ><a href="#activityanchor">Activités</a></li>
+                                <li><a href="#activityanchor">Activités</a></li>
                             </ul>    
                     
                             <a class="inscription" href="#">S'inscrire</a>
@@ -33,14 +33,18 @@
                     <form method="post">
                         <p>
                             <label for="search"><i class="fas fa-map-marker-alt"></i></label>
-                            <input type="text" name="search" id="search" value="Marseille,France" size="30"/>
+                            <input type="text" name="search" id="search" value="Marseille,France" size="30"/> 
                             <input type="submit" value="Rechercher"/>
+                            <span><i class="fas fa-search"></i></span> 
                         </p>
                     </form>
 
                     <div class="filters">
                         <ul>
-                            <li><h2>Filtres</h2></li>
+                            <div class="responsivefilters">
+                                <li><h2>Filtres</h2></li>
+                            </div>
+
                             <li class="filterseffect"><i id="economic" class="fas fa-money-bill-wave"></i><a href="#">Économique</a></li>
                             <li class="filterseffect"><i id="family" class="fas fa-child"></i><a href="#">Familial</a></li>
                             <li class="filterseffect"><i class="fas fa-heart"></i><a href="#">Romantique</a></li>
@@ -62,7 +66,7 @@
 
                     <article class="hostings">
                     
-                        <h2>Hébergements à Marseille</h2> 
+                        <h2 id="titlehostings">Hébergements à Marseille</h2> 
 
                         <div class="hostingscards">
                             <a href="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
@@ -132,7 +136,9 @@
                             </a>
                         </div>
 
-                        <a href="#">Afficher Plus</a>
+                        <div class="moreinformations">
+                            <a href="#">Afficher Plus</a>
+                        </div>
                     </article>
 
                     <article class="mostpopular">
