@@ -730,7 +730,7 @@ footer
 {  
 }*/
 
-@media screen and (min-width: 769px) and (max-width: 1024px) 
+@media screen and (min-width: 768px) and (max-width: 1024px) 
 { 
 
 /*Mise en forme de la barre de recherche*/
@@ -804,6 +804,13 @@ label[for="search"]
     align-items: center;
 }
 
+.hostings
+{
+    width: 98%;
+    margin-left: 1em;
+}
+
+
 /*Mise en forme des hébergements populaires*/
 
 .titlepopular
@@ -818,8 +825,8 @@ label[for="search"]
 
 .mostpopularcards
 {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .mostpopular img 
