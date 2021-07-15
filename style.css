@@ -121,6 +121,8 @@ span
 .filters 
 {
     margin-top: 1em;
+    display: flex;
+    align-items: center;
 }
 
 .filters ul 
@@ -364,6 +366,7 @@ em
     display: flex;
     flex-direction: column;
 }
+
 .mostpopular img 
 {
     height: 9em;
@@ -597,7 +600,14 @@ label[for="search"]
 
 .filters 
 {
+    display: flex;
+    flex-direction: column;
     margin-top: 0em;
+}
+
+.responsivefilters
+{
+    align-self: flex-start;
 }
 
 .filters ul
@@ -606,21 +616,11 @@ label[for="search"]
     width: 100%;
 }
 
-.responsivefilters
-{
-    width: 90%;
-    margin-left: 1.5em;
-}
-
 .filters ul li 
 {
     padding-top: 1em;
     margin-left: -1.5em;
-}
-
-#family
-{
-    margin-left: 1em;
+    padding-right: 1em;
 }
 
 /*Mise en forme du aside*/
@@ -726,19 +726,114 @@ footer
 }
 }
 
-@media screen and (min-width:415px) and (max-width: 768px)
+/*@media screen and (min-width:415px) and (max-width: 768px)
 {  
+}*/
+
+@media screen and (min-width: 769px) and (max-width: 1024px) 
+{ 
+
+/*Mise en forme de la barre de recherche*/
+
+input[value="Rechercher"]
+{
+    display: none;
 }
 
-@media screen (min-width: 769px) and (max-width: 1024px) 
-{ 
+form p 
+{
+    display: flex;
+    align-items: center;
+}
+
+span
+{
+    display: flex;
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0.4em;
+    padding: 0.75em;
+    position: relative;
+    right: 2em;
+}
+
+input[type="text"]
+{
+  padding: 0.84em 0em 0.76em 1em;
+  width: 25%;
+}
+
+label[for="search"]
+{
+  padding: 0.7em 1.5em 0.71em 0.9em;
+}
+
+
+/*Mise en forme des filtres*/
+
+.filters
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.responsivefilters
+{
+    align-self: flex-start;
+}
+
+.filters ul
+{
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.filters ul li 
+{
+    padding-top: 1em;
+    margin-left: -1.5em;
+    padding-right: 1em;
+}
+
+/*Mise en forme des hébergements*/
+
+.hostingsmarseille
+{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+/*Mise en forme des hébergements populaires*/
+
+.titlepopular
+{
+    padding: 1em 2.5em 0em 0em;
+}
+
+.mostpopular
+{
+    width: 100%;
+}
+
+.mostpopularcards
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.mostpopular img 
+{
+    height: 9.5em;
+    overflow: hidden;
+}
 }
 
 @media screen (min-width: 1025px) and (max-width: 1920px) 
 {   
 }
 
-@media screen (min-width: 1921px) and (max-width: 2560px) 
+@media screen and (min-width: 1921px) and (max-width: 2560px) 
 {
 }
 
