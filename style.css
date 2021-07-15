@@ -502,7 +502,7 @@ footer ul li a
 
 /*Mise en place des différents environnements*/
 
-@media screen and (min-width: 0px) and (max-width: 768px)
+@media screen and (min-width: 280px) and (max-width: 768px)
 {
 
 /*Mise en forme du nav header*/
@@ -727,11 +727,7 @@ footer
 }
 }
 
-/*@media screen and (min-width:415px) and (max-width: 768px)
-{  
-}*/
-
-@media screen and (min-width: 769px) and (max-width: 1440px) 
+@media screen and (min-width: 769px) and (max-width: 1224px) 
 { 
 
 /*Mise en forme de la barre de recherche*/
@@ -838,7 +834,7 @@ label[for="search"]
 }
 }
 
-@media screen and (min-width: 1441px) and (max-width: 2560px) 
+@media screen and (min-width: 1824px) and (max-width: 2560px) 
 {
     body
     {
