@@ -727,3 +727,11 @@ footer ul li a
         flex-direction: column;
     }
 }
+
+
+@media screen and (min-width: 481px) and (max-width: 768px)
+{
+
+
+
+}
