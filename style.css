@@ -392,6 +392,11 @@ em
     padding: 0.2em 1em 0em 1em;
 }
 
+.cardpopulardescription
+{
+    display: block;
+}
+
 .mostpopular figcaption h2
 {
     font-size: 15px;
@@ -408,6 +413,7 @@ em
 {
     font-size: 13px;
     color: #0065FC;
+    padding-top: 1em;
 }
 
 .mostpopularcards a:hover
