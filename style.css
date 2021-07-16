@@ -225,7 +225,7 @@ aside p
 
 .hostingsmarseille
 {
-    margin: 0em 2em 1em 2em;
+    margin: 1em 2em 1em 2em;
 }
 
 /*Mise en forme de l'article hostings*/
@@ -504,47 +504,39 @@ footer ul li a
 
 @media screen and (min-width: 280px) and (max-width: 480px)
 {
+
+    /*Mise en forme du nav header*/
+
     header
     {
         margin: 1em 1em 0em 1em;
     }
 
-    /*Mise en forme du nav*/
-
     .anchors 
     {
         display: flex;
         flex-direction: column;
-        margin-bottom: 1em;
-        
     }
 
     .inscription
     {
         position: absolute;
-        top: 2em;
+        top: 1.8em;
         right: 3em;
     }
 
     nav 
     {
-        padding:1em 0em 1em 0em;
+        padding-bottom: 1em;
     }
 
     nav ul li a
     {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 1em;
         border-bottom: #F2F2F2 solid 3px;  
-        width: 100%;
-    }
-
-    #activityanchors a
-    {
-        padding: 0em 4em 1em 4em;
-    }
-
-    #hostingsanchors a
-    {
-        padding: 0em 2em 1em 2em;
+        
     }
 
     nav ul li a:hover
@@ -576,7 +568,6 @@ footer ul li a
         padding: 0.75em;
         position: relative;
         right: 2em;
-        cursor: pointer;
     }
 
     input[type="text"]
@@ -635,16 +626,39 @@ footer ul li a
         font-size: 14px;
     }
 
-    /*Mise en forme des hébergements de marseille*/
+    /*Mise en forme des hébergements*/
 
     .hostingsmarseille
     {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        width: 100%;
-        margin: 0;
-        padding: 0;
+    }
+
+    .hostings
+    {
+        background-color: white;
+    }
+
+    #titlehostings
+    {
+        padding-bottom: 1em;
+    }   
+
+    .hostingscards
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hostingscards figure
+    {
+        margin: 0em 0em 0em 0em;   
+    }
+
+    .moreinformations
+    {
+        padding-top: 2em;
     }
 
     /*Mise en forme des hébergements populaires*/
@@ -656,69 +670,25 @@ footer ul li a
 
     .mostpopular
     {
-        width: 95.8%;
+        width: 115%;
         border-radius: 0em;
     }
 
     .mostpopularcards
     {
-        padding-right: 1em;
-        max-width: 100%;
+        margin: 1em 0em 1em 0em;
     }
 
-    .mostpopular figure
+    .mostpopularcards figure
     {
-        margin: 0.5em 0em 0.5em 0em ;
-    }
-
-    /*Mise en forme de hostings*/
-    
-    #titlehostings
-    {
-        padding: 1em 0em 0em 0.5em;
-    }
-
-    .hostings
-    {
-        padding: 0;
-        margin: 0;
-        background-color: white;
-    }
-
-    .hostingscards
-    {
-        display: flex;
-        flex-direction: column;
-        gap: 0em;  
-        padding: 0em 0.5em 0em 0.5em;
-    }
-
-    .hostingscards img
-    {
-        height: 7em;
-        object-fit: cover;
-    }
-
-    .hostingscards figure
-    {
-        margin: 1em 0em 0em 0em;   
-    }
-
-    .moreinformations
-    {
-        padding: 2em 0em 0em 0.5em;
+        margin: 0.5em 1.7em 0.5em 0em;   
     }
 
     /*Mise en forme des activités*/
 
     .activity
     {
-        margin: 1em 1em 0em 1em;
-    }
-
-    .activity h2:nth-child(1)
-    {
-        padding: 1em 0em 1em 1em;
+        margin: 2em 1em 0em 1em;
     }
 
     .activitycards
@@ -727,10 +697,9 @@ footer ul li a
         flex-direction: column;
     }
 
-    .activitycards img
+    .largepictures img
     {
-        height: 7em;
-        width: 100%;
+        height: 9em;
     }
 
     /*Mise en forme du footer*/
@@ -739,14 +708,123 @@ footer ul li a
     {
         display: flex;
         flex-direction: column;
+    }
+    }
+
+@media screen and (min-width: 481px) and (max-width: 768px) 
+{ 
+
+    /*Mise en forme de la barre de recherche*/
+
+    input[value="Rechercher"]
+    {
+        display: none;
+    }
+
+    form p 
+    {
+        display: flex;
+        align-items: center;
+    }
+
+    span
+    {
+        display: flex;
+        background-color: #0065FC;
+        color: white;
+        border-radius: 0.4em;
+        padding: 0.75em;
+        position: relative;
+        right: 2em;
+    }
+
+    input[type="text"]
+    {
+        padding: 0.84em 0em 0.76em 1em;
+        width: 25%;
+    }
+
+    label[for="search"]
+    {
+    padding: 0.7em 1.5em 0.71em 0.9em;
+    }
+
+
+    /*Mise en forme des filtres*/
+
+    .filters
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .responsivefilters
+    {
+        align-self: flex-start;
+    }
+
+    .filters ul
+    {
+        flex-wrap: wrap;
         width: 100%;
+    }
+
+    .filters ul li 
+    {
+        padding-top: 1em;
+        margin-left: -1.5em;
+        padding-right: 1em;
+    }
+
+    /*Mise en forme des hébergements*/
+
+    .hostingsmarseille
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .hostings
+    {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    /*Mise en forme des hébergements populaires*/
+
+    .titlepopular
+    {
+        padding: 1em 2.5em 0em 0em;
+    }
+
+    .mostpopular
+    {
+        width: 101.5%;
+    }
+
+    .mostpopularcards
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mostpopular img 
+    {
+        height: 8em;
+        overflow: hidden;
     }
 }
 
+@media screen (min-width: 769px) and (max-width: 1024px) 
+{   
+}
 
-@media screen and (min-width: 481px) and (max-width: 768px)
+@media screen and (min-width: 1440px) and (max-width: 1920px) 
 {
-
-
-
+    body
+    {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
 }
