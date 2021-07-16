@@ -539,7 +539,7 @@ footer ul li a
 
     #activityanchors a
     {
-        padding: 0em 3.5em 1em 3.5em;
+        padding: 0em 4em 1em 4em;
     }
 
     #hostingsanchors a
@@ -653,13 +653,13 @@ footer ul li a
 
     .mostpopular
     {
-        width: 115.5%;
+        width: 100%;
         border-radius: 0em;
     }
 
     .mostpopularcards
     {
-        margin: 0em 0em 1em 0em;
+        margin: 0em 0.5em 1em 0.5em;
         max-width: 100%;
     }
 
@@ -674,7 +674,7 @@ footer ul li a
     {
         background-color: white;
         margin: 0;
-        width: 108%;
+        width: 100%;
     }
 
     .hostingscards
@@ -725,6 +725,7 @@ footer ul li a
     {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 }
 
