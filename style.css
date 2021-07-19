@@ -531,18 +531,21 @@ footer ul li a
         right: 3em;
     }
 
-    nav 
+    nav
     {
-        padding-bottom: 1em;
+        padding-top: 1em;
     }
 
     nav ul li a
     {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding-bottom: 1em;
+        padding: 0em 3em 1em 3em;
         border-bottom: #F2F2F2 solid 3px;  
-        
+        width: 100%;
+    }
+
+    #hostingsanchors
+    {
+        padding-right: -1em;
     }
 
     nav ul li a:hover
