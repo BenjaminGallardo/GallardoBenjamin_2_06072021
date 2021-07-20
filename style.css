@@ -69,12 +69,6 @@ nav ul li a:hover
     font-size: 1.3em;
 }
 
-/*form
-{
-    max-width: 100%;
-    overflow: auto;
-}*/
-
 label[for="search"]
 {
     background-color: #F2F2F2;
