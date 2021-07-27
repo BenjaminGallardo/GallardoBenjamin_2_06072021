@@ -148,7 +148,7 @@ span
     left: 1.3em;
     padding: 0.9em; 
     text-align: center;
-    border-radius: 100%;
+    border-radius: 50%;
     height: auto;
     width: auto;
     font-size: 1em;
@@ -488,7 +488,7 @@ footer ul li a
 
 /*Mise en place des différents environnements*/
 
-@media screen and (min-width: 280px) and (max-width: 426px)
+@media screen and (min-width: 280px) and (max-width: 540px)
 {
     /*Mise en forme du nav header*/
 
@@ -686,7 +686,7 @@ footer ul li a
     }
 }
 
-@media screen and (min-width: 427px) and (max-width: 1024px)
+@media screen and (min-width: 541px) and (max-width: 1024px)
 {
 
         /*Mise en forme de la barre de recherche*/
